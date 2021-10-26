@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="planets.css">
+    <link href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" 
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" 
+      crossorigin="anonymous" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,22 +11,45 @@
 </head>
 <body>
     <div class="background2"></div>
-    <h1>Taos-Zed</h1>
-    <h2>Nearest Outpost:  23 Parceps<br><br>
-        Services:  Fuel, Food, Lodging<br><br>
-        Breathable Atmosphere: Yes<br><br>
-        Edible Wildlife/Plants: Yes<br><br>
-        Extreme Temperatures: No<br><br>
-        Predators: Platapus-bears, Wolfbats, Space Crabs<br><br>
-        Dangers:  Geysers and Hot Springs(Bring Thermometor)<br><br>
-        <a class="link1" href="index.html"><span>Back to Main Menu</span></a> 
-    </h2>
-    <style>
-        body {
-    background-image: url(Images/2_TAOS_Zed.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+    <div class="container">
+        <div class="text">
+            <h1>Taos-Zed</h1>
+            <h2>Nearest Outpost:  23 Parceps<br><br>
+                Services:  Fuel, Food, Lodging<br><br>
+                Breathable Atmosphere: Yes<br><br>
+                Edible Wildlife/Plants: Yes<br><br>
+                Extreme Temperatures: No<br><br>
+                Predators: Platapus-bears, Wolfbats, Space Crabs<br><br>
+                Dangers:  Geysers and Hot Springs(Bring Thermometor)<br><br>
+                <footer class="footer">
+                    <a class="footlink" href="mondavia.html"><i class="fas fa-angle-double-left"></i></a>
+                    <a class="footlink" href="index.html"><i class="fas fa-home"></i></a>
+                    <a class="footlink" href="hyleria.html"><i class="fas fa-angle-double-right"></i></a>
+                </footer> 
+            </h2>
+        </div>
+    </div>
+</body>
+
+<style>
+    body {
+        background-image: url(Images/2_TAOS_Zed.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .container {
+        position: relative;
+        height: 97vh;
+        width: 97vw;
+    }
+    .text {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
     h1 {
         color: cyan;
         text-align: center;
@@ -34,9 +59,13 @@
         text-align: center;
         text-shadow: 1px 1px black;
     }
-    .link1 {
+    .footer {
+        font-size: 3.5vh;
+        text-align: center;
+    }
+    .footlink {
+        padding: 3vh;
         color: cyan;
     }
     </style>
-</body>
 </html>

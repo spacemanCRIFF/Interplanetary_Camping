@@ -1,287 +1,285 @@
-    body {
-    font-family: "Josefin Slab";
-    width: 100vw;
-    overflow: hidden;
-    display: flex;
-  }
+body {
+  font-family: "Josefin Slab";
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+}
 
-  .footer {
-      margin-top: 10vh;
-      width: 100%;
-      position: absolute;
-    }
-    h2 {
-      padding: 5vw;
-      font-size: 2.5vh;
-      color: #ffc000;
-      text-align: center;
-      text-shadow: 1px 1px #000000;
-    }
-  
-  .background {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: url(https://lh4.googleusercontent.com/proxy/gdKMsKqzMFQ1xEVJf9lNNfL7pw_HG3DaHZij1yJPHGPLQYzY_FXqVrSsC0Q2VK49HPML25NGCls545UIGYmTs6y11TAXtLcKAv_HmKA=w3840-h2160-p-k-no-nd-mv);
-    background-position: center center;
-    background-size: cover;
-    -webkit-animation: zoom 100s infinite alternate;
-            animation: zoom 100s infinite alternate;
-    -webkit-animation-timing-function: linear;
-            animation-timing-function: linear;
-    /* 	filter: blur(2px); */
-  }
-  
-  #app {
-    z-index: 10;
-    width: 250px;
-    height: 250px;
-    margin: auto;
-    /* 	background:rgba(255,255,255,0.5); */
-    border-radius: 8px;
-    position: relative;
-  }
-  
-  @-webkit-keyframes zoom {
-    from {
-      transform: scale(1.01);
-    }
-    to {
-      transform: scale(1.5);
-    }
-  }
-  
-  @keyframes zoom {
-    from {
-      transform: scale(1.01);
-    }
-    to {
-      transform: scale(1.5);
-    }
-  }
-  .header {
-    margin-top: 11vh;
-    position: absolute;
-    width: 100%;
-  }
-  h1 {
-    font-size: 2.2rem;
-    color: red;
-    text-align: center;
-    text-shadow: 1.5px 1.5px #000000;
-  }
-  .container1 {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    margin-top: 29vh;
-  }
-  .container {
-    display: flex;
-    text-align: center;
-    position: relative;
-    width: 55%;
-    justify-content: center;
-    margin: auto;
-  }
+.footer {
+  margin-top: 10vh;
+  width: 100%;
+  position: absolute;
+}
+h2 {
+  padding: 5vw;
+  font-size: 2.5vh;
+  color: #ffc000;
+  text-align: center;
+  text-shadow: 1px 1px #000000;
+}
 
-  .product {
-    flex: auto;
-    font-size: 1.5rem;
-    min-width: calc(33% - 2vw);
-    position: relative;
-  }
-  
-  .product:before {
-    content: "";
-    float: left;
-    padding-top: 100%;
-  }
-  
-  .content1 {
-    background-size: cover;
-    background-image: url("Images/1_Mondavia.jpg");
-    border-radius: 50%;
-    height: 84%;
-    margin: 8%;
-    position: absolute;
-    width: 84%;
-    vertical-align: middle;
-    z-index: 5000;
-  }
-  .content2 {
-    background-size: cover;
-    background-image: url("Images/2_TAOS_Zed.jpg");
-    border-radius: 50%;
-    height: 84%;
-    margin: 8%;
-    position: absolute;
-    width: 84%;
-    vertical-align: middle;
-    z-index: 5000;
-  }
-  .content3 {
-    background-size: cover;
-    background-image: url("Images/3_Hyleria.jpg");
-    border-radius: 50%;
-    height: 84%;
-    margin: 8%;
-    position: absolute;
-    width: 84%;
-    vertical-align: middle;
-    z-index: 5000;
-  }
-  .content4 {
-    background-size: cover;
-    background-image: url("Images/4_Kerf_Sector.jpg");
-    border-radius: 50%;
-    height: 84%;
-    margin: 8%;
-    position: absolute;
-    width: 84%;
-    vertical-align: middle;
-    z-index: 5000;
-  }
-  .content5 {
-    background-size: cover;
-    background-image: url("Images/5_Leos_7.jpg");
-    border-radius: 50%;
-    height: 84%;
-    margin: 8%;
-    position: absolute;
-    width: 84%;
-    vertical-align: middle;
-    z-index: 5000;
-  }
-  
-  
-  .product:hover .effect-1,
-  .product:hover .effect-2 {
-    display: block;
-  }
-  
-  .effect-1,
-  .effect-2 {
-    border-radius: 50%;
-    display: none;
-    mix-blend-mode: multiply;
-    height: 84%;
-    opacity: 1;
-    position: absolute;
-    width: 84%;
-    z-index: 3000;
-  }
-  
-  .effect-1 {
-    animation: rotate 1.8s linear infinite;
-    background: cyan;
-  }
-  
-  .effect-2 {
-    animation: rotate 1.2s linear reverse infinite;
-    background: #e7a9ff;
-  }
-  
-  @keyframes rotate {
-    0% {
-      top: 0;
-      left: 8%;
-    }
-    25% {
-      top: 8%;
-      left: 0%;
-    }
-    50% {
-      top: 16%;
-      left: 8%;
-    }
-    75% {
-      top: 8%;
-      left: 16%;
-    }
-    100% {
-      top: 0;
-      left: 8%;
-    }
-  }
-  
-  .title {
-    position: relative;
-    top: calc(100% + 16px);
-    color: cyan;
-    text-shadow: 1px 1px #000000;
-  }
-  
-  .title span {
-    display: block;
-    font-family: Helvetica, Arial, Sans-Serif;
-    font-size: 0.6rem;
-    letter-spacing: 0.1rem;
-    margin-top: 8px;
-    text-transform: uppercase;
-  }
-  
-  .mondavia {
-    opacity: 0;
-    background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
-    border-radius: 50%;
-    height: 50%;
-    margin: 25%;
-    width: 50%;
-  }
-  
-  .taos-zed {
-    opacity: 0;
-    background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
-    border-radius: 50%;
-    height: 50%;
-    margin: 25%;
-    width: 50%;
-  }
-  
-  .hylaria {
-    opacity: 0;
-    background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
-    border-radius: 50%;
-    height: 50%;
-    margin: 25%;
-    width: 50%;
-  }
+.background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url(https://lh4.googleusercontent.com/proxy/gdKMsKqzMFQ1xEVJf9lNNfL7pw_HG3DaHZij1yJPHGPLQYzY_FXqVrSsC0Q2VK49HPML25NGCls545UIGYmTs6y11TAXtLcKAv_HmKA=w3840-h2160-p-k-no-nd-mv);
+  background-position: center center;
+  background-size: cover;
+  -webkit-animation: zoom 100s infinite alternate;
+  animation: zoom 100s infinite alternate;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  /* 	filter: blur(2px); */
+}
 
-  .kerf-sector {
-    opacity: 0;
-    background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
-    border-radius: 50%;
-    height: 50%;
-    margin: 25%;
-    width: 50%;
-  }
+#app {
+  z-index: 10;
+  width: 250px;
+  height: 250px;
+  margin: auto;
+  /* 	background:rgba(255,255,255,0.5); */
+  border-radius: 8px;
+  position: relative;
+}
 
-  .leos-7 {
-    opacity: 0;
-    background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
-    border-radius: 50%;
-    height: 50%;
-    margin: 25%;
-    width: 50%;
+@-webkit-keyframes zoom {
+  from {
+    transform: scale(1.2);
   }
-  
-  .twitter {
-    background-image: linear-gradient(
-      to top,
-      #1e3c72 0%,
-      #1e3c72 1%,
-      #2a5298 100%
-    );
-    border-radius: 14px;
-    bottom: 20px;
-    color: #fff;
-    font-weight: 400;
-    letter-spacing: 0.1rem;
-    line-height: 28px;
-    padding: 0 12px;
-    position: fixed;
-    right: 20px;
-    z-index: 5000;
+  to {
+    transform: scale(1.8);
   }
-  
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(1.2);
+  }
+  to {
+    transform: scale(1.8);
+  }
+}
+.header {
+  margin-top: 11vh;
+  position: absolute;
+  width: 100%;
+}
+h1 {
+  font-size: 2.2rem;
+  color: red;
+  text-align: center;
+  text-shadow: 1.5px 1.5px #000000;
+}
+.container1 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  margin-top: 29vh;
+}
+.container {
+  display: flex;
+  text-align: center;
+  position: relative;
+  width: 55%;
+  justify-content: center;
+  margin: auto;
+}
+
+.product {
+  flex: auto;
+  font-size: 1.5rem;
+  min-width: calc(33% - 2vw);
+  position: relative;
+}
+
+.product:before {
+  content: "";
+  float: left;
+  padding-top: 100%;
+}
+
+.content1 {
+  background-size: cover;
+  background-image: url("Images/1_Mondavia.jpg");
+  border-radius: 50%;
+  height: 84%;
+  margin: 8%;
+  position: absolute;
+  width: 84%;
+  vertical-align: middle;
+  z-index: 5000;
+}
+.content2 {
+  background-size: cover;
+  background-image: url("Images/2_TAOS_Zed.jpg");
+  border-radius: 50%;
+  height: 84%;
+  margin: 8%;
+  position: absolute;
+  width: 84%;
+  vertical-align: middle;
+  z-index: 5000;
+}
+.content3 {
+  background-size: cover;
+  background-image: url("Images/3_Hyleria.jpg");
+  border-radius: 50%;
+  height: 84%;
+  margin: 8%;
+  position: absolute;
+  width: 84%;
+  vertical-align: middle;
+  z-index: 5000;
+}
+.content4 {
+  background-size: cover;
+  background-image: url("Images/4_Kerf_Sector.jpg");
+  border-radius: 50%;
+  height: 84%;
+  margin: 8%;
+  position: absolute;
+  width: 84%;
+  vertical-align: middle;
+  z-index: 5000;
+}
+.content5 {
+  background-size: cover;
+  background-image: url("Images/5_Leos_7.jpg");
+  border-radius: 50%;
+  height: 84%;
+  margin: 8%;
+  position: absolute;
+  width: 84%;
+  vertical-align: middle;
+  z-index: 5000;
+}
+
+.product:hover .effect-1,
+.product:hover .effect-2 {
+  display: block;
+}
+
+.effect-1,
+.effect-2 {
+  border-radius: 50%;
+  display: none;
+  mix-blend-mode: multiply;
+  height: 84%;
+  opacity: 1;
+  position: absolute;
+  width: 84%;
+  z-index: 3000;
+}
+
+.effect-1 {
+  animation: rotate 1.8s linear infinite;
+  background: cyan;
+}
+
+.effect-2 {
+  animation: rotate 1.2s linear reverse infinite;
+  background: #e7a9ff;
+}
+
+@keyframes rotate {
+  0% {
+    top: 0;
+    left: 8%;
+  }
+  25% {
+    top: 8%;
+    left: 0%;
+  }
+  50% {
+    top: 16%;
+    left: 8%;
+  }
+  75% {
+    top: 8%;
+    left: 16%;
+  }
+  100% {
+    top: 0;
+    left: 8%;
+  }
+}
+
+.title {
+  position: relative;
+  top: calc(100% + 16px);
+  color: cyan;
+  text-shadow: 1px 1px #000000;
+}
+
+.title span {
+  display: block;
+  font-family: Helvetica, Arial, Sans-Serif;
+  font-size: 0.6rem;
+  letter-spacing: 0.1rem;
+  margin-top: 8px;
+  text-transform: uppercase;
+}
+
+.mondavia {
+  opacity: 0;
+  background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+  border-radius: 50%;
+  height: 50%;
+  margin: 25%;
+  width: 50%;
+}
+
+.taos-zed {
+  opacity: 0;
+  background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+  border-radius: 50%;
+  height: 50%;
+  margin: 25%;
+  width: 50%;
+}
+
+.hylaria {
+  opacity: 0;
+  background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+  border-radius: 50%;
+  height: 50%;
+  margin: 25%;
+  width: 50%;
+}
+
+.kerf-sector {
+  opacity: 0;
+  background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+  border-radius: 50%;
+  height: 50%;
+  margin: 25%;
+  width: 50%;
+}
+
+.leos-7 {
+  opacity: 0;
+  background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+  border-radius: 50%;
+  height: 50%;
+  margin: 25%;
+  width: 50%;
+}
+
+.twitter {
+  background-image: linear-gradient(
+    to top,
+    #1e3c72 0%,
+    #1e3c72 1%,
+    #2a5298 100%
+  );
+  border-radius: 14px;
+  bottom: 20px;
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  line-height: 28px;
+  padding: 0 12px;
+  position: fixed;
+  right: 20px;
+  z-index: 5000;
+}
