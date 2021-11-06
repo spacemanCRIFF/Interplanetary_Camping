@@ -100,7 +100,7 @@ h1 {
 
 .content1 {
   background-size: cover;
-  background-image: url("Images/1_Mondavia.jpg");
+  background-image: url("./Images/1_Mondavia.jpg");
   border-radius: 50%;
   height: 84%;
   margin: 8%;
@@ -111,7 +111,7 @@ h1 {
 }
 .content2 {
   background-size: cover;
-  background-image: url("Images/2_TAOS_Zed.jpg");
+  background-image: url("/Images/2_TAOS_Zed.jpg");
   border-radius: 50%;
   height: 84%;
   margin: 8%;
