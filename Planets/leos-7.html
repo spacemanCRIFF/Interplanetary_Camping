@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" 
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" 
+      crossorigin="anonymous" rel="stylesheet">
+    <link rel="stylesheet" href="planets.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leos-7</title>
+</head>
+<body>
+    <div class="background5"></div>
+    <div class="container">
+        <div class="text">
+            <h1>Leos-7</h1>
+            <h2>Nearest Outpost:  77 Parceps<br><br>
+                Services:  Fuel, Transit Docks<br><br>
+                Breathable Atmosphere: No (See IP Suit Guidelines)<br><br>
+                Edible Wildlife/Plants: No (Maybe Space Crabs)<br><br>
+                Extreme Temperatures: Yes (See IP Camping Guide)<br><br>
+                Predators: Skitters, Xenomorphs, Space Crabs<br><br>
+                Dangers:  Exposure, Aliens, Extreme Remoteness<br><br>
+                Click here to<button class="hide"><h2>&nbsp;<(&nbsp;Hide Text&nbsp;)>&nbsp;</h2></button>&nbsp;or
+                <a href="../slideshow.html"><button class="slideshow"><h2>&nbsp;<(&nbsp;View Slideshow&nbsp;)>&nbsp;</h2></button></a>
+                <footer class="footer">
+                    <a class="footlink" href="kerf-sector.html"><i class="fas fa-angle-double-left"></i></a>
+                    <a class="footlink" href="../index.html"><i class="fas fa-home"></i></a>
+                    <a class="footlink" href="mondavia.html"><i class="fas fa-angle-double-right"></i></a>
+                </footer> 
+            </h2>
+        </div>
+    </div>
+</body>
+
+<style>
+    body {
+        position: relative;
+        background-image: url(../Images/5_Leos_7.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .container {
+        position: relative;
+        height: 97vh;
+        width: 97vw;
+    }
+    .text {
+        color: #00ff00;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+    h1 {
+        color: cyan;
+        text-align: center;
+    }
+    h2 {
+        text-align: center;
+        text-shadow: 1px 1px black;
+    }    
+    .footer {
+        margin-top: 2vh;
+        font-size: 3.5vh;
+        text-align: center;
+    }
+    .footlink {
+        padding: 3vh;
+        color: cyan;
+    }
+    button {
+        color: #00ff00;
+        margin-top: -3vh;
+        background: transparent;
+        border: transparent;
+        cursor: pointer;
+    }
+    button:hover {
+        color: cyan;
+    }
+    .hide{
+        padding-right: 0vw;
+    }
+    .slideshow{
+        padding-left: 0vw;
+    }
+    .container:focus-within {
+        opacity: 0;
+        transition: all 1s ease-in-out;
+    }
+</style>
+</html>
