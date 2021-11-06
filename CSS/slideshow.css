@@ -167,10 +167,10 @@ body {
   color: white;
 }
 .cb-slideshow li:nth-child(1) span {
-  background-image: url(./Images/0_Space_Camping.jpg);
+  background-image: url(.../Images/0_Space_Camping.jpg);
 }
 .cb-slideshow li:nth-child(2) span {
-  background-image: url(./Images/1_Mondavia.jpg);
+  background-image: url(Images/1_Mondavia.jpg);
   -webkit-animation-delay: 6s;
   -moz-animation-delay: 6s;
   -o-animation-delay: 6s;
