@@ -21,6 +21,8 @@
                 Extreme Temperatures: No<br><br>
                 Predators: Space Sharks, Stingrays, Jellyfish<br><br>
                 Dangers:  Tropical Storms and Space Hippies<br><br>
+                Click here to<button class="hide"><h2>&nbsp;<(&nbsp;Hide Text&nbsp;)>&nbsp;</h2></button>&nbsp;or
+                <a href="slides.html"><button class="slideshow"><h2>&nbsp;<(&nbsp;View Slideshow&nbsp;)>&nbsp;</h2></button></a>
                 <footer class="footer">
                     <a class="footlink" href="leos-7.html"><i class="fas fa-angle-double-left"></i></a>
                     <a class="footlink" href="index.html"><i class="fas fa-home"></i></a>
@@ -46,6 +48,7 @@
         width: 97vw;
     }
     .text {
+        color: #00ff00;
         margin: 0;
         position: absolute;
         top: 50%;
@@ -58,17 +61,37 @@
         text-align: center;
     }
     h2 {
-        color: #00ff00;
         text-align: center;
         text-shadow: 1px 1px black;
     }
     .footer {
+        margin-top: 2vh;
         font-size: 3.5vh;
         text-align: center;
     }
     .footlink {
         padding: 3vh;
         color: cyan;
+    }
+    button {
+        color: #00ff00;
+        margin-top: -3vh;
+        background: transparent;
+        border: transparent;
+        cursor: pointer;
+    }
+    button:hover {
+        color: cyan;
+    }
+    .hide{
+        padding-right: 0vw;
+    }
+    .slideshow{
+        padding-left: 0vw;
+    }
+    .container:focus-within {
+        opacity: 0;
+        transition: all 1s ease-in-out;
     }
     </style>
 </html>
